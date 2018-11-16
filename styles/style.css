@@ -48,6 +48,8 @@ input[type=submit] {
     border: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 /* 2. Header */
@@ -85,20 +87,45 @@ h2 {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-around;
+    justify-content: space-around;
     margin: 20px auto;
     padding: 20px;
 }
 
 input {
-    /* display: none; */
-
+    display: none;
 }
 
-.selected {
+input[type="submit"] {
+    display: inline-block;
+}
+
+label {
+   cursor: pointer; 
+}
+
+label i {
+    margin-right: 10px;
+}
+
+.alert {
+    background: #ff616ee1;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left:0;
+    z-index: 10;
+    display: none;
+}
+
+.fa-check-square {
     color:#ff616f;
 }
+
+
 
 /* 4. Results */
 

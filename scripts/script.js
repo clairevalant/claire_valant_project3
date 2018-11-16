@@ -1,6 +1,19 @@
 // Script for Claire Valant Project 3: Toronto Tattoo Tinder
 
 // when an input is selected, add a class of the label to "selected" to change the color to #ff616f
+tattApp.toggleCheck = function(){
+    console.log("Prgm has started");
+
+    // If input is checked, change icon and icon colour
+
+    // remove class of checked-square from everything else but the clicked one
+    
+    $("label").on("click", function () {
+        // the classes you are toggling must be in the same string !!
+        $(this).children("i").toggleClass("fa-square fa-check-square");
+    })
+}
+
 
 
 // when the form is submitted,
@@ -24,6 +37,11 @@ tattApp.formSubmit = function(){
             userColour == undefined ||
             userCost == undefined) {
                 // show an error message (slide down shows it)
+                $(".alert").slideDown("fast");
+                $(".alert").on("click", function() {
+                        $(this).slideUp("fast")
+                });
+
         } else {
             // pass results to filter tattoo array
             tattApp.findResults(userType, userMeaning, userSize, userStyle, userColour, userCost);
@@ -44,14 +62,14 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     // const finalAnswer = results.rand;
 }
 
-
-
 // share results with user! pop up? shuffle in from the right?
 
 // initiating function
 tattApp.init = function() {
     // All methods go here
+    tattApp.toggleCheck();
     tattApp.formSubmit();
+
 }
 
 // document ready
