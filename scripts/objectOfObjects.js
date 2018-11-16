@@ -2,8 +2,8 @@
 const tattApp = {};
 
 // initialize an array to contain all "possible" tattoos
-tattApp.allTattoos = [
- {
+tattApp.allTattoos = {
+    tatt1: {
         name: "arrow",
         type: ["basic", "hippie", "minimalist"],
         meaning: ["yes", "it only flies forewards toward its goal. Anyone that stands in your way gets hit"],
@@ -13,7 +13,7 @@ tattApp.allTattoos = [
         cost: ["$"],
         artist: ["Miniminiminiatures"],
     },
-    {
+    tatt2: {
         name: "chain link fence with a hole in it",
         style: ["punk", "metal"],
         meaning: ["yes", "you have broken through obstacles in your life. Note: this assumes that you have broken through obstacles in your life"],
@@ -23,7 +23,7 @@ tattApp.allTattoos = [
         cost: ["$$"],
         artist: ["Rat666Tat"],
     },
-    {
+    tatt3: {
         name: "skull",
         style: ["punk", "metal"],
         meaning: ["yes", "it is a reminder of the impermenance of life / memento mori if you wanna sound Latin about it"],
@@ -202,5 +202,5 @@ tattApp.allTattoos = [
     //     colour:,
     //     cost:,
     //     artist:,
-    // }
-]
+    // },
+};

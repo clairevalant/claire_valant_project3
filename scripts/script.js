@@ -10,8 +10,24 @@ tattApp.toggleCheck = function(){
     
     $("label").on("click", function () {
         // the classes you are toggling must be in the same string !!
+        console.log($(this));
+        $(this).parents(".questionContainer").find("i").removeClass("fa-check-square");
+        console.log($(this).parents(".questionContainer").children("label"));
+        
+            // console.log(nameOfChecked);
+        // $(`label[id=${idOfChecked}]`).children("i").toggleClass("fa-square fa-check-square");
+        
         $(this).children("i").toggleClass("fa-square fa-check-square");
+
     })
+
+    // $("input[type=radio]").on("change", function() {
+    //     let idOfChecked = $(this).attr("id");
+    //     console.log(idOfChecked);
+        
+        
+    // })
+    
 }
 
 
