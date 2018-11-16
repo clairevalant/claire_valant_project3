@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <title>toronto tattoo tinder</title>
 </head>
 <body>
@@ -19,14 +17,14 @@
                 <span class="accent">tinder<img class="fireLogo" src="assets/fireLogo57.png" alt="Red-orange fire icon"></span>
             </h1>
             <p>find the perfect tattoo & artist match for your style!</p>
-            <button>get swipin'</button>
+            <a href="#first" class="button">get swipin'</a>
         </div>
     </header>
 
     <main>
         <div class="wrapper">
             <form action="#">
-                <div class="questionContainer">
+                <div class="questionContainer" id="first">
                     <h2>Stereotype yourself in one word:</h2>
                     <input type="radio" name="type" id="basic" value="basic">
                     <label for="basic">pretty average tbh!</label>
@@ -119,5 +117,9 @@
     <footer>
         <p>Copyright &copy; Claire Valant 2018</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/allTatts.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

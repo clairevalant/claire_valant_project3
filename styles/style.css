@@ -34,14 +34,14 @@ main,
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .wrapper {
     width: 85vw;
 }
 
-button,
+.button,
 input[type=submit] {
     background: #ff616f;
     color: #fafafa;
@@ -50,13 +50,13 @@ input[type=submit] {
     padding: 10px 20px;
 }
 
-
 /* 2. Header */
 
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
+    height: 100vh;
 }
 
 header span {
@@ -93,7 +93,7 @@ h2 {
 
 input {
     /* display: none; */
-    
+
 }
 
 .selected {
