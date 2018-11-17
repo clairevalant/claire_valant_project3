@@ -6,17 +6,12 @@ tattApp.toggleCheck = function(){
     // If input is checked, change icon and icon colour
     // remove class of checked-square from everything else but the clicked one
     $("label").on("click", function () {
-        console.log($(this));
-        // remove the changed class of "checked square" on all labels except the current selected one
+        // remove the changed class of "checked square" on all labels...
         $(this).parents(".questionContainer").find("i").removeClass("fa-check-square").addClass("fa-square");
-        console.log($(this).parents(".questionContainer").children("label"));
-        
+        // ...add the (styled) class of check square to the i
         $(this).children("i").toggleClass("fa-square fa-check-square");
-
     })
 }
-
-
 
 // when the form is submitted,
 tattApp.formSubmit = function(){
@@ -53,10 +48,16 @@ tattApp.formSubmit = function(){
 
 // filter allTattoos array for only objects with properties relevant to user
 tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
+    
     const results = tattApp.allTattoos.filter(function(tatt){
-        return tatt.type === uType && tatt.meaning === uMeaning && tatt.size === uSize && tatt.style === uStyle && tatt.colour === uColour && tatt.cost === uCost
+        // console.log(tatt);
+        return tatt.style.includes(uStyle)
+                && tatt.meaning.includes(uMeaning)
+                && tatt.size.includes(uSize)
+                && tatt.style.includes(uStyle)
+                && tatt.colour === uColour
+                && tatt.cost.includes(uCost)
     })
-
     console.log(results);
     
     // randomly select one tattoo idea for the user and one artist from the list

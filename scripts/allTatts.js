@@ -1,12 +1,12 @@
 // empty object in which to store everything
 const tattApp = {};
 
-// initialize an array to contain all "possible" tattoos
+// initialze an array to contain all "possible" tattoos
 tattApp.allTattoos = [
  {
         name: "arrow",
         type: ["basic", "hippie", "minimalist"],
-        meaning: ["yes", "it only flies forewards toward its goal. Anyone that stands in your way gets hit"],
+        meaning: ["no","yes","it only flies forewards toward its goal. Anyone that stands in your way gets hit"],
         size: ["small"],
         style: ["trendy", "traditional"],
         colour: "black",
@@ -16,24 +16,24 @@ tattApp.allTattoos = [
     {
         name: "chain link fence with a hole in it",
         style: ["punk", "metal"],
-        meaning: ["yes", "you have broken through obstacles in your life. Note: this assumes that you have broken through obstacles in your life"],
+        meaning: ["no","yes", "you have broken through obstacles in your life. Note: this assumes that you have broken through obstacles in your life"],
         size: ["medium"],
         style: ["trendy"],
-        colour: "no",
+        colour: "black",
         cost: ["$$"],
         artist: ["Rat666Tat"],
     },
     {
         name: "skull",
         style: ["punk", "metal"],
-        meaning: ["yes", "it is a reminder of the impermenance of life / memento mori if you wanna sound Latin about it"],
+        meaning: ["no","yes", "it is a reminder of the impermenance of life / memento mori if you wanna be Latin about it"],
         size: ["small", "medium", "large"],
         style: ["traditional"],
         colour: "black",
         cost: ["$", "$$", "$$$"],
         artist: ["c00pc00ptatt00s"],
     },
-    //   tatt4: {
+    // {
     //     name:,
     //     style:[],
     //     meaning:[],
@@ -43,7 +43,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    //   tatt5: {
+    // {
     //     name:,
     //     style:[],
     //     meaning:[],
@@ -53,7 +53,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt6: {
+    //  {
     //     name:,
     //     style:,
     //     meaning:,
@@ -63,7 +63,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt7: {
+    //{
     //     name:,
     //     style:,
     //     meaning:,
@@ -73,7 +73,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt8: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -83,7 +83,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt9: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -93,7 +93,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt10: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -103,7 +103,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt11: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -113,7 +113,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt12: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -123,7 +123,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt13: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -133,7 +133,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt14: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -143,7 +143,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt15: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -153,7 +153,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt16: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -163,7 +163,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt17: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -173,7 +173,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt18: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -183,7 +183,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt19: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,
@@ -193,7 +193,7 @@ tattApp.allTattoos = [
     //     cost:,
     //     artist:,
     // },
-    // tatt20: {
+    // {
     //     name:,
     //     style:,
     //     meaning:,

@@ -1,7 +1,7 @@
 // empty object in which to store everything
 const tattApp = {};
 
-// initialize an array to contain all "possible" tattoos
+// initialize an object to contain all "possible" tattoos
 tattApp.allTattoos = {
     tatt1: {
         name: "arrow",
