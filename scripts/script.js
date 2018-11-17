@@ -2,32 +2,18 @@
 
 // when an input is selected, add a class of the label to "selected" to change the color to #ff616f
 tattApp.toggleCheck = function(){
-    console.log("Prgm has started");
 
     // If input is checked, change icon and icon colour
-
     // remove class of checked-square from everything else but the clicked one
-    
     $("label").on("click", function () {
-        // the classes you are toggling must be in the same string !!
         console.log($(this));
-        $(this).parents(".questionContainer").find("i").removeClass("fa-check-square");
+        // remove the changed class of "checked square" on all labels except the current selected one
+        $(this).parents(".questionContainer").find("i").removeClass("fa-check-square").addClass("fa-square");
         console.log($(this).parents(".questionContainer").children("label"));
-        
-            // console.log(nameOfChecked);
-        // $(`label[id=${idOfChecked}]`).children("i").toggleClass("fa-square fa-check-square");
         
         $(this).children("i").toggleClass("fa-square fa-check-square");
 
     })
-
-    // $("input[type=radio]").on("change", function() {
-    //     let idOfChecked = $(this).attr("id");
-    //     console.log(idOfChecked);
-        
-        
-    // })
-    
 }
 
 
