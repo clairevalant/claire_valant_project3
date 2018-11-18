@@ -68,6 +68,13 @@ header {
     height: 100vh;
 }
 
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 header span {
     display: block;
 }
@@ -159,3 +166,10 @@ footer p {
     font-size: 1.5rem;
     color: #fafafa;
 }
+
+/* @media only screen (min-width: ) {
+
+
+
+
+} */
