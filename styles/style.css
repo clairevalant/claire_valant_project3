@@ -47,9 +47,16 @@ input[type=submit] {
     color: #fafafa;
     border: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
     text-decoration: none;
+    display: block;
+    align-self: center;
+}
+
+.button:hover,
+input[type=submit]:hover {
+    /* hover styles */
 }
 
 /* 2. Header */
@@ -88,6 +95,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-content: center;
     margin: 20px auto;
     padding: 20px;
 }
@@ -126,8 +134,17 @@ label i {
     color:#ff616f;
 }
 
-
 /* 4. Results */
+
+.results {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    height: 90vh;
+}
 
 /* 5. Footer */
 

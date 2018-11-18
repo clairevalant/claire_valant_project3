@@ -6,7 +6,7 @@ tattApp.allTattoos = [
  {
         name: "arrow",
         type: ["basic", "hippie", "minimalist"],
-        meaning: ["no","yes","it only flies forewards toward its goal. Anyone that stands in your way gets hit"],
+        meaning: ["no","yes","it only flies forewards toward its goal. Anyone that stands in your way gets hit lmao"],
         size: ["small"],
         style: ["trendy", "traditional"],
         colour: "black",
