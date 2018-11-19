@@ -138,7 +138,7 @@ tattApp.allTattoos = [
     {
         name: "Sade's face on your chest",
         type: ["gym"],
-        meaning: ["idcMeaning", "yes", "you're pretty sure Drake has that one."],
+        meaning: ["no","idcMeaning", "yes", "you're pretty sure Drake has that one."],
         size: ["small", "medium"],
         style: ["trendy", "traditional", "idcStyle"],
         colour: ["black", "colour", "idcColour"],
@@ -162,7 +162,7 @@ tattApp.allTattoos = [
     {
         name: "a running dog",
         type: ["alt", "metal", "punky"],
-        meaning: ["no", "idcMeaning", "yes", "in honour of your ole gal, or maybe just to look and feel tougher."],
+        meaning: ["no", "idcMeaning", "yes", "it'll make ya think of your ole gal, or maybe you just want it to look and feel tougher."],
         size: ["small", "medium", "large"],
         style: ["trendy", "idcStyle", "traditional"],
         colour: ["black", "colour", "idcColour"],
