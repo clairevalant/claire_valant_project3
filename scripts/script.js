@@ -105,7 +105,7 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     const finalAnswerMeaning = results[rand].meaning[3];
     const finalAnswerArtist = results[rand].artist;
     const finalAnswerImage = `<img alt="Screenshot of and link to a suggested tattoo artist's instagram" src="${results[rand].artistImage}">`;
-    const finalAnswerInsta = `<a href="${results[rand].artistInsta}">${finalAnswerImage}</a>`;
+    const finalAnswerInsta = `<a target="_blank" href="${results[rand].artistInsta}">${finalAnswerImage}</a>`;
 
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"
     if (uMeaning === "no" || uMeaning === "idcMeaning") {
@@ -120,7 +120,8 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
         $(".results").slideDown("fast", function(){
             window.scrollBy(0, window.innerheight);
         });
-        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist} because ${finalAnswerMeaning}</p>`;
+        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}, because ${finalAnswerMeaning}</p>`;
+        $(".resultsTitle").before(finalAnswerInsta);
         $(".resultsTitle").after(paragraph);
     }
 }
