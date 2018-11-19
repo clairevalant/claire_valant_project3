@@ -187,19 +187,24 @@ form {
 /* 4. Results */
 
 .results {
-    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    z-index: 10;
+    z-index: 20;
     height: 100vh;
+    display: none;
 }
 
 .results img {
     width: 100%;
     max-width:750px;
     min-width: 200px;
+}
+
+.playAgain {
+    align-self: center;
+    display: inline-block;
 }
 
 /* 5. Credits */
@@ -280,10 +285,6 @@ footer p {
 
     .results {
         height: 95vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
     }
 
     .fireLogo {

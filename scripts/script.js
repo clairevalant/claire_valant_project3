@@ -58,12 +58,6 @@ tattApp.formSubmit = function(){
         console.log(userStyle);
         console.log(userColour);
         console.log(userCost);
-        
-        
-        
-        
-        
-        
     
         // check that all questions are filled out
         if (userType == undefined ||
@@ -115,10 +109,17 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
 
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"
     if (uMeaning === "no" || uMeaning === "idcMeaning") {
+        // trying to make results appear and have it scroll into view
+        $(".results").slideDown("fast", function(){
+            window.scrollBy(0, window.innerHeight);
+        });
         const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}! Click the image to visit their profile.</p>`;
         $(".resultsTitle").before(finalAnswerInsta);
         $(".resultsTitle").after(paragraph);
     } else {
+        $(".results").slideDown("fast", function(){
+            window.scrollBy(0, window.innerheight);
+        });
         const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist} because ${finalAnswerMeaning}</p>`;
         $(".resultsTitle").after(paragraph);
     }

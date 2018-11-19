@@ -31,7 +31,7 @@
             <p>you missed some questions, you silly goose!</p>
         </div>
         
-        <form action="#">
+        <form action="#results">
             <div class="questionContainer" id="first">
                 <h2>Stereotype yourself in one word:</h2>
                 <input type="radio" name="type" id="basic" value="basic">
@@ -105,11 +105,10 @@
                 <label for="$$"><i class="far fa-square"></i>like..... enough</label>
                 <input type="radio" name="cost" id="$$$" value="$$$">
                 <label for="$$$"><i class="far fa-square"></i> I have almost too much money</label>
-                <input type="submit" value="submit">
+                <input type="submit" value="submit" id="submit">
             </div>
 
-            <div class="questionContainer results">
-                <img src="assets/ekchan1.jpg" alt="">
+            <div class="questionContainer results" id="results">
                 <h2 class="resultsTitle">It's a match!</h2>
                 <a class="button playAgain" href="#first">play again?</a>
             </div>
