@@ -212,12 +212,14 @@ form {
 .creditsHeader {
     display: flex;
     flex-direction: column;
-    /* height: calc(100vh - 40px); */
+    justify-content: center;
+    align-items: center;
+    margin-left:7.5vw;
 }
 
-/* .creditsHeader .wrapper {
-    flex-basis: 40%;
-} */
+.creditsHeader .wrapper {
+    width: 85vw;
+}
 
 .creditsHeader h1 {
     font-size: 7rem;

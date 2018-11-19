@@ -90,7 +90,7 @@ tattApp.allTattoos = [
     {
         name: "tattoo of \"family first\" in script (probably accross your chest)",
         type: ["gym"],
-        meaning: ["no","idcMeaning", "yes", "because there is nothing more important than showing your family that you care abotu them thiiiis much"],
+        meaning: ["no","idcMeaning", "yes", "there is nothing more important than showing your family that you care abotu them thiiiis much"],
         size: ["medium", "large"],
         style: ["traditional", "idcStyle"],
         colour: ["no", "yes", "idcColour"],
@@ -102,7 +102,7 @@ tattApp.allTattoos = [
     {
         name: "line down the side of your entire body",
         type: ["minimalist"],
-        meaning: ["no","idcMeaning", "yes", "maybe you feel divided a lot of the time."],
+        meaning: ["no","idcMeaning", "yes", "maybe you feel divided a lot of the time. Maybe you just like lines."],
         size: ["large"],
         style: ["trendy", "idcStyle"],
         colour: ["no", "yes", "idcColour"],
@@ -114,7 +114,7 @@ tattApp.allTattoos = [
     {
         name: "tattoo of your zodiac sign",
         type: ["basic", "hippie", "minimalist"],
-        meaning: ["no","idcMeaning", "yes", "honestly astrology is really hot right now and sometimes you forget what yours is and it's embarassing."],
+        meaning: ["no","idcMeaning", "yes", "honestly astrology is really hot right now and sometimes you forget what your sign is and it's embarassing."],
         size: ["small"],
         style: ["trendy", "traditional","idcStyle"],
         colour: ["no", "yes", "idcColour"],
