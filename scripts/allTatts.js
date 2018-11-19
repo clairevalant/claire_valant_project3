@@ -291,4 +291,16 @@ tattApp.allTattoos = [
         artistInsta: "https://www.instagram.com/rarrattooing/",
         artistImage: "assets/rattattooing.png",
     },
+    {
+        name: "a fish tattoo",
+        type: ["gym", "basic"],
+        meaning: ["no", "yes","idcMeaning", "it reminds you of finishing with the boys and lets all these city folk know that you'd rather be in the bush."],
+        size: ["medium", "large"],
+        style: ["idcStyle", "traditional"],
+        colour: ["colour", "black", "idcColour"],
+        cost: ["$$", "$$$"],
+        artist: "Rat Tattooing",
+        artistInsta: "https://www.instagram.com/rarrattooing/",
+        artistImage: "assets/rattattooing.png",
+    },
 ]
