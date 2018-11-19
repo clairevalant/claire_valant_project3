@@ -51,6 +51,19 @@ tattApp.formSubmit = function(){
         const userStyle = $("input[name=style]:checked").val();
         const userColour = $("input[name=colour]:checked").val();
         const userCost = $("input[name=cost]:checked").val(); 
+
+        console.log(userType);
+        console.log(userMeaning);
+        console.log(userSize);
+        console.log(userStyle);
+        console.log(userColour);
+        console.log(userCost);
+        
+        
+        
+        
+        
+        
     
         // check that all questions are filled out
         if (userType == undefined ||

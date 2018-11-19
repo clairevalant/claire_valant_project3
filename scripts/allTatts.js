@@ -17,7 +17,7 @@ tattApp.allTattoos = [
     },
     {
         name: "chain link fence with a hole in it",
-        type: ["punk", "metal"],
+        type: ["punk"],
         meaning: ["no","idcMeaning","yes", "you have broken through obstacles in your life. Note: this assumes that you have broken through obstacles in your life"],
         size: ["medium"],
         style: ["trendy", "idcStyle"],
@@ -25,7 +25,7 @@ tattApp.allTattoos = [
         cost: ["$$"],
         artist: ["Rat666Tat"],
         artistInsta: "https://www.instagram.com/rat666tat/",
-        artistImage: "../assets/PLACEHOLDER.jpg",
+        artistImage: "assets/rat666tat.png",
     },
     {
         name: "skull",
