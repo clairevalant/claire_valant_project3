@@ -13,9 +13,6 @@ tattApp.smoothScroll = function(){
 
 tattApp.toggleCheck = function(){
 
-    // reset all inputs to undefined, so if user reloads page they can start over
-    $("input[type=radio]").val(undefined);
-
     // If input is checked, change icon and icon colour
     $("label").on("click", function () {
         // remove the changed class of "checked square" on all labels...
@@ -23,18 +20,24 @@ tattApp.toggleCheck = function(){
         // ...add the (styled) class of check square to the i
         $(this).children("i").toggleClass("fa-square fa-check-square");
     })
+
+    // When "Play again?" is clicked, reload the page to get rid of previous answers
+    $('.playAgain').click(function () {
+        location.reload(true);
+    })
 }
 
-tattApp.swipeEnable = function() {
-    // use Scroll jQuary library to enable swipe on mobile and tablet
-    $("form").swipe("option", { 
-        threshold: 100,
-    });
+// an (unsuccessful*) attempt at using a Swipe javascript library to create a Tinder-like card swipe effect
+// tattApp.swipeEnable = function() {
+//     // use Scroll jQuary library to enable swipe on mobile and tablet
+//     $("form").swipe("option", { 
+//         threshold: 100,
+//     });
 
-    $("form").on("swipe", function() {
-        console.log("swiping!");
-    });
-}
+//     $("form").on("swipe", function() {
+//         console.log("swiping!");
+//     });
+// }
 
 // when the form is submitted,
 tattApp.formSubmit = function(){
@@ -47,7 +50,7 @@ tattApp.formSubmit = function(){
         const userSize = $("input[name=size]:checked").val();
         const userStyle = $("input[name=style]:checked").val();
         const userColour = $("input[name=colour]:checked").val();
-        const userCost = $("input[name=cost]:checked").val();
+        const userCost = $("input[name=cost]:checked").val(); 
     
         // check that all questions are filled out
         if (userType == undefined ||
@@ -77,11 +80,11 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     
     // filter array of all tattoos for those matching user preferences
     const results = tattApp.allTattoos.filter(function(tatt){
-        return tatt.style.includes(uStyle)
+        return tatt.type.includes(uType)
                 && tatt.meaning.includes(uMeaning)
                 && tatt.size.includes(uSize)
                 && tatt.style.includes(uStyle)
-                && tatt.colour === uColour
+                && tatt.colour.includes(uColour)
                 && tatt.cost.includes(uCost)
     })
     console.log(results);
@@ -95,7 +98,6 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     const finalAnswerImage = `<img alt="Tattoo artist's instagram" src=${results[rand].artistImage}>`;
     const finalAnswerInsta = `<a href="${results[rand].artistInsta}">${finalAnswerImage}</a>`;
 
-    
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"
     if (uMeaning === "no" || uMeaning === "idcMeaning") {
         const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}! Click the image to visit their profile.</p>`;
