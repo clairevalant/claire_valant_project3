@@ -63,20 +63,28 @@ input[type=submit]:hover {
 
 header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     height: 100vh;
 }
 
 header .wrapper {
     display: flex;
+    width: 85vw;
+    height: 85vh;
+    margin: 7.5vw;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
+}
+
+header p {
+    margin: 0;
 }
 
 header .button {
     align-self: flex-start;
+    /* margin-top   : 30px; */
 }
 
 header span {
@@ -85,12 +93,22 @@ header span {
 
 h1 {
     display: inline-block;
-    font-size: 3rem;
+    margin: 0;
+    font-size: 4.5rem;
 }
 
 .fireLogo {
-    width: 2.3rem;
+    width: 3rem;
     display: inline-block;
+    position: relative;
+    top: 1px;
+}
+
+.fireLogo2 {
+    width: 7.5rem;
+    position: relative;
+    top:2px;
+    display: none;
 }
 
 /* 3. Questions/Inputs */
@@ -181,13 +199,34 @@ footer {
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fafafa;
 }
 
-/* @media only screen (min-width: ) {
+@media only screen and  (min-width: 650px) {
+    header .wrapper {
+        width: 50vw;
+        height: 50vh;
+    }
 
+    h1 {
+        font-size: 9rem;
+    }
 
+    .questionContainer {
+        height: auto;
+    }
 
+    .results {
+        height: 90vh;
+    }
 
-} */
+    .fireLogo {
+        display: none;
+    }
+
+    .fireLogo2 {
+        display: inline-block;
+    }
+
+}

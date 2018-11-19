@@ -1,5 +1,12 @@
 // Script for Claire Valant Project 3: Toronto Tattoo Tinder
 
+tattApp.smoothScroll = function(){
+    $("header a").smoothScroll({
+        offset: 100
+    }); 
+}
+
+
 tattApp.toggleCheck = function(){
 
     // reset all inputs to undefined, so if user reloads page they can start over
@@ -14,16 +21,14 @@ tattApp.toggleCheck = function(){
     })
 }
 
-tattApp.swipeEnable = function() {
-    // use Scroll jQuary library to enable swipe on mobile and tablet
-    $("form").swipe("option", { threshold: 100} );
+// tattApp.swipeEnable = function() {
+//     // use Scroll jQuary library to enable swipe on mobile and tablet
+//     $("form").swipe("option", { threshold: 100} );
 
-    $("form").on("swipe", function() {
-        console.log("swiping!");
-    });
-
-
-}
+//     $("form").on("swipe", function() {
+//         console.log("swiping!");
+//     });
+// }
 
 // when the form is submitted,
 tattApp.formSubmit = function(){
