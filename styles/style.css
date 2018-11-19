@@ -256,15 +256,24 @@ ul li {
 
 footer {
     height: 40px;
+    background: #232323;
     display: flex;
     justify-content: center;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: #232323;
 }
 
 footer p {
     font-size: 1.3rem;
-    color: #fafafa;
+}
+
+footer p,
+footer a {
+    color: #f3f3f3;
 }
 
 /* 7. Media Queries */

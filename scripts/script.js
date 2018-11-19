@@ -113,14 +113,14 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
         $(".results").slideDown("fast", function(){
             window.scrollBy(0, window.innerHeight);
         });
-        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}! Click the image to visit their profile.</p>`;
+        const paragraph = `<p>You should get ${finalAnswer} by ${finalAnswerArtist}! Click the image to visit their Instagram profile.</p>`;
         $(".resultsTitle").before(finalAnswerInsta);
         $(".resultsTitle").after(paragraph);
     } else {
         $(".results").slideDown("fast", function(){
             window.scrollBy(0, window.innerheight);
         });
-        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}, because ${finalAnswerMeaning}</p>`;
+        const paragraph = `<p>You should get ${finalAnswer} by ${finalAnswerArtist}, because ${finalAnswerMeaning} Click the image to visit their Instagram profile.</p>`;
         $(".resultsTitle").before(finalAnswerInsta);
         $(".resultsTitle").after(paragraph);
     }
