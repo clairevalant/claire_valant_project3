@@ -47,17 +47,17 @@ input[type=submit] {
     background: #ff616f;
     color: #fafafa;
     border: none;
-    text-transform: uppercase;
     padding: 10px 40px;
     border-radius: 10px;
     text-decoration: none;
     display: block;
     align-self: center;
+    transition: box-shadow 0.3s;
 }
 
 .button:hover,
 input[type=submit]:hover {
-    /* hover styles */
+    box-shadow: 5px 5px #232323;
 }
 
 /* 2. Header */
@@ -171,7 +171,6 @@ form {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-content: center;
     margin: 20px auto;
     padding: 20px;
@@ -189,6 +188,12 @@ form {
     text-align: center;
     z-index: 10;
     height: 95vh;
+}
+
+.results img {
+    width: 100%;
+    max-width:100%;
+    min-width: 200px;
 }
 
 /* 5. Footer */

@@ -91,11 +91,13 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     
     // randomly select one tattoo idea for the user and one artist from the list
     // get info from selected object key-value pairs to add to user's displayed results
+    // add a screenshot of artist's instagram profile with a link to profile
+    // ****NOTE: Instagram doe snot let you embed entire profiles, only single posts. Hopefully this will be updated in future
     const rand = Math.floor(Math.random() * results.length);
     const finalAnswer = results[rand].name;
     const finalAnswerMeaning = results[rand].meaning[3];
     const finalAnswerArtist = results[rand].artist;
-    const finalAnswerImage = `<img alt="Tattoo artist's instagram" src=${results[rand].artistImage}>`;
+    const finalAnswerImage = `<img alt="Screenshot of and link to a suggested tattoo artist's instagram" src="${results[rand].artistImage}">`;
     const finalAnswerInsta = `<a href="${results[rand].artistInsta}">${finalAnswerImage}</a>`;
 
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"

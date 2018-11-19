@@ -29,9 +29,9 @@ tattApp.allTattoos = [
     },
     {
         name: "skull",
-        type: ["punk", "metal"],
+        type: ["alternative"],
         meaning: ["no","idcMeaning","yes", "it is a reminder of the impermenance of life / memento mori if you wanna be Latin about it"],
-        size: ["small", "medium", "large"],
+        size: ["small", "medium"],
         style: ["traditional", "idcStyle"],
         colour: ["black", "idcColour"],
         cost: ["$", "$$", "$$$"],
@@ -49,7 +49,7 @@ tattApp.allTattoos = [
         cost: ["$", "$$"],
         artist: ["E.K. Chan"],
         artistInsta: "https://www.instagram.com/ek.tattoos/",
-        artistImage: "../assets/ekchan.jpg",
+        artistImage: "assets/ekchan.jpg",
     },
     // {
     //     name:,
