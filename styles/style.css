@@ -18,6 +18,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 html {
     font-size: 62.5%;
+    margin: 0;
 }
 
 body {
@@ -135,8 +136,9 @@ label i {
 }
 
 .alert {
-    background: #ff616ee1;
-    border-radius: 10px;
+    background: #ff616ef6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 10px;
     color: white;
     text-align: center;
@@ -186,7 +188,7 @@ form {
     justify-content: center;
     text-align: center;
     z-index: 10;
-    height: 90vh;
+    height: 95vh;
 }
 
 /* 5. Footer */
@@ -203,10 +205,10 @@ footer p {
     color: #fafafa;
 }
 
-@media only screen and  (min-width: 650px) {
+@media only screen and (min-width: 650px) {
     header .wrapper {
-        width: 50vw;
-        height: 50vh;
+        width: 440px;
+        height: 75vh;
     }
 
     h1 {
@@ -218,7 +220,7 @@ footer p {
     }
 
     .results {
-        height: 90vh;
+        height: 95vh;
     }
 
     .fireLogo {
@@ -229,4 +231,21 @@ footer p {
         display: inline-block;
     }
 
+    
+}
+
+@media only screen and (min-height:740px) {
+    header .wrapper {
+        height: 55vh;
+    }
+
+    .questionContainer {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:870px) {
+    header .wrapper {
+        width: 440px;
+    }
 }

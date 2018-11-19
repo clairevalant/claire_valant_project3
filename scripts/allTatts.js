@@ -6,13 +6,14 @@ tattApp.allTattoos = [
  {
         name: "arrow",
         type: ["basic", "hippie", "minimalist"],
-        meaning: ["no","yes","it only flies forewards toward its goal. Anyone that stands in your way gets hit lmao"],
+        meaning: ["no","icdMeaning","yes","it only flies forewards toward its goal. Anyone that stands in your way gets hit lmao"],
         size: ["small"],
         style: ["trendy", "traditional"],
         colour: "black",
         cost: ["$"],
         artist: ["Miniminiminiatures"],
         artistInsta:"https://www.instagram.com/minimini.studio/",
+        artistImage: "/assets/minimini.jpg",
     },
     {
         name: "chain link fence with a hole in it",
@@ -23,19 +24,20 @@ tattApp.allTattoos = [
         colour: "black",
         cost: ["$$"],
         artist: ["Rat666Tat"],
-        artistInsta: "PLACEHOLDER"
+        artistInsta: "PLACEHOLDER",
+        artistImage: "/assets/PLACEHOLDER.jpg"
     },
-    // {
-    //     name: "skull",
-    //     style: ["punk", "metal"],
-    //     meaning: ["no","icdMeaning","yes", "it is a reminder of the impermenance of life / memento mori if you wanna be Latin about it"],
-    //     size: ["small", "medium", "large"],
-    //     style: ["traditional"],
-    //     colour: "black",
-    //     cost: ["$", "$$", "$$$"],
-    //     artist: ["c00pc00ptatt00s"],
-    //     artistInsta: ""
-    // },
+    {
+        name: "skull",
+        style: ["punk", "metal"],
+        meaning: ["no","icdMeaning","yes", "it is a reminder of the impermenance of life / memento mori if you wanna be Latin about it"],
+        size: ["small", "medium", "large"],
+        style: ["traditional"],
+        colour: "black",
+        cost: ["$", "$$", "$$$"],
+        artist: ["c00pc00ptatt00s"],
+        artistInsta: ""
+    },
     // {
     //     name:,
     //     style:[],

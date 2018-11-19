@@ -1,16 +1,20 @@
 // Script for Claire Valant Project 3: Toronto Tattoo Tinder
 
+// add smoothScroll
 tattApp.smoothScroll = function(){
     $("header a").smoothScroll({
-        offset: 100
+        offset: -40,
     }); 
-}
 
+    $(".playAgain").smoothScroll({
+        offset: -40,
+    });
+}
 
 tattApp.toggleCheck = function(){
 
     // reset all inputs to undefined, so if user reloads page they can start over
-    // $("input[type=radio]").val(undefined);
+    $("input[type=radio]").val(undefined);
 
     // If input is checked, change icon and icon colour
     $("label").on("click", function () {
@@ -21,14 +25,16 @@ tattApp.toggleCheck = function(){
     })
 }
 
-// tattApp.swipeEnable = function() {
-//     // use Scroll jQuary library to enable swipe on mobile and tablet
-//     $("form").swipe("option", { threshold: 100} );
+tattApp.swipeEnable = function() {
+    // use Scroll jQuary library to enable swipe on mobile and tablet
+    $("form").swipe("option", { 
+        threshold: 100,
+    });
 
-//     $("form").on("swipe", function() {
-//         console.log("swiping!");
-//     });
-// }
+    $("form").on("swipe", function() {
+        console.log("swiping!");
+    });
+}
 
 // when the form is submitted,
 tattApp.formSubmit = function(){
@@ -69,6 +75,7 @@ tattApp.formSubmit = function(){
 // filter allTattoos array for only objects with values relevant to user
 tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     
+    // filter array of all tattoos for those matching user preferences
     const results = tattApp.allTattoos.filter(function(tatt){
         return tatt.style.includes(uStyle)
                 && tatt.meaning.includes(uMeaning)
@@ -80,17 +87,22 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     console.log(results);
     
     // randomly select one tattoo idea for the user and one artist from the list
-    const rand = Math.floor(Math.random() * results.length);    
+    // get info from selected object key-value pairs to add to user's displayed results
+    const rand = Math.floor(Math.random() * results.length);
     const finalAnswer = results[rand].name;
     const finalAnswerMeaning = results[rand].meaning[3];
     const finalAnswerArtist = results[rand].artist;
+    const finalAnswerImage = `<img alt="Tattoo artist's instagram" src=${results[rand].artistImage}>`;
+    const finalAnswerInsta = `<a href="${results[rand].artistInsta}">${finalAnswerImage}</a>`;
+
     
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"
     if (uMeaning === "no" || uMeaning === "idcMeaning") {
-        const paragraph = `<p>You should get a(n) ${finalAnswer}!</p>`;
+        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist}! Click the image to visit their profile.</p>`;
+        $(".resultsTitle").before(finalAnswerInsta);
         $(".resultsTitle").after(paragraph);
     } else {
-        const paragraph = `<p>You should get a(n) ${finalAnswer} because ${finalAnswerMeaning}</p>`;
+        const paragraph = `<p>You should get a(n) ${finalAnswer} by ${finalAnswerArtist} because ${finalAnswerMeaning}</p>`;
         $(".resultsTitle").after(paragraph);
     }
 }
@@ -101,7 +113,8 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
 // initiating function
 tattApp.init = function() {
     // All methods go here
-    tattApp.swipeEnable();
+    // tattApp.swipeEnable();
+    tattApp.smoothScroll();
     tattApp.toggleCheck();
     tattApp.formSubmit();
 
