@@ -17,6 +17,7 @@
                 <span>toronto</span>
                 <span>tattoo</span>
                 <span class="accent">tinder<img class="fireLogo" src="assets/fireLogo57.png" alt="Red-orange fire icon"></span>
+                <!-- Icon is Hot by Pawel Rak from the Noun Project, edited -->
             </h1>
             <p>find the perfect tattoo & artist match for your style because you are bad at deciding for yourself</p>
             <a href="#first" class="button">get swipin'</a>
@@ -25,94 +26,94 @@
 
     <main>
         <div class="wrapper">
-            <div class="alert">
-                <p>you missed some questions, you silly goose!</p>
+        </div>
+        <div class="alert">
+            <p>you missed some questions, you silly goose!</p>
+        </div>
+        
+        <form action="#">
+            <div class="questionContainer" id="first">
+                <h2>Stereotype yourself in one word:</h2>
+                <input type="radio" name="type" id="basic" value="basic">
+                <label for="basic"><i class="far fa-square"></i>pretty average tbh!</label>
+                <input type="radio" name="type" id="alt" value="alt">
+                <label for="alt"><i class="far fa-square"></i>alternative</label>
+                <input type="radio" name="type" id="punk" value="punk">
+                <label for="punk"><i class="far fa-square"></i>punky</label>
+                <input type="radio" name="type" id="metal" value="metal">
+                <label for="metal"><i class="far fa-square"></i>metal</label>
+                <input type="radio" name="type" id="minimalist" value="minimalist">
+                <label for="minimalist"><i class="far fa-square"></i>minimalist</label>
+                <input type="radio" name="type" id="gym" value="gym">
+                <label for="gym"><i class="far fa-square"></i>sentient protein shake</label>
+                <input type="radio" name="type" id="hippie" value="hippie">
+                <label for="hippie"><i class="far fa-square"></i>hippie</label>
             </div>
-
-            <form action="#">
-                <div class="questionContainer" id="first">
-                    <h2>Stereotype yourself in one word:</h2>
-                    <input type="radio" name="type" id="basic" value="basic">
-                    <label for="basic"><i class="far fa-square"></i>pretty average tbh!</label>
-                    <input type="radio" name="type" id="alt" value="alt">
-                    <label for="alt"><i class="far fa-square"></i>alternative</label>
-                    <input type="radio" name="type" id="punk" value="punk">
-                    <label for="punk"><i class="far fa-square"></i>punky</label>
-                    <input type="radio" name="type" id="metal" value="metal">
-                    <label for="metal"><i class="far fa-square"></i>metal</label>
-                    <input type="radio" name="type" id="minimalist" value="minimalist">
-                    <label for="minimalist"><i class="far fa-square"></i>minimalist</label>
-                    <input type="radio" name="type" id="gym" value="gym">
-                    <label for="gym"><i class="far fa-square"></i>sentient protein shake</label>
-                    <input type="radio" name="type" id="hippie" value="hippie">
-                    <label for="hippie"><i class="far fa-square"></i>hippie</label>
-                </div>
-            
-                <div class="questionContainer visuallyhidden">
-                    <h2>What is your birthday?</h2>
-                    <input type="date" name="bday" id="date">
-                    <label for="date"></label>
-                </div>
-            
-                <div class="questionContainer">
-                    <h2>Does it need to have meaning?</h2>
-                    <input type="radio" name="meaning" id="yes" value="yes">
-                    <label for="yes"><i class="far fa-square"></i>yes, I am very introspective</label>
-                    <input type="radio" name="meaning" id="no" value="no">
-                    <label for="no"><i class="far fa-square"></i>no, my body is just a canvas!!</label>
-                    <input type="radio" name="meaning" id="idcMeaning" value="idcMeaning">
-                    <label for="idcMeaning"><i class="far fa-square"></i>idc either way</label>
-            
-                </div>
-            
-                <div class="questionContainer">
-                    <h2>How big do you want this thing?</h2>
-                    <input type="radio" name="size" id="small" value="small">
-                    <label for="small"><i class="far fa-square"></i>littel ☺</label>
-                    <input type="radio" name="size" id="medium" value="medium">
-                    <label for="medium"><i class="far fa-square"></i>visible, but not obnoxious</label>
-                    <input type="radio" name="size" id="large" value="large">
-                    <label for="large"><i class="far fa-square"></i>I want to be able to take my shirt off at parties</label>
-                </div>
-            
-                <div class="questionContainer">
-                    <h2>Trendy or traditional?</h2>
-                    <input type="radio" name="style" id="traditional" value="traditional">
-                    <label for="traditional"><i class="far fa-square"></i>classic & familiar</label>
-                    <input type="radio" name="style" id="trendy" value="trendy">
-                    <label for="trendy"><i class="far fa-square"></i>cool & trendy</label>
-                    <input type="radio" name="style" id="idcTT" value="idcTT">
-                    <label for="idcTT"><i class="far fa-square"></i>neither, I don't want to limit my options</label>
-                </div>
-            
-                <div class="questionContainer">
-                    <h2>Colour or no?</h2>
-                    <input type="radio" name="colour" id="colour" value="colour">
-                    <label for="colour"><i class="far fa-square"></i>colour!!!</label>
-                    <input type="radio" name="colour" id="black" value="black">
-                    <label for="black"><i class="far fa-square"></i>just black</label>
-                    <input type="radio" name="colour" id="idcColour" value="idcColour">
-                    <label for="idcColour"><i class="far fa-square"></i>idc and please stop trying to limit me</label>
-                </div>
-            
-                <div class="questionContainer">
-                    <h2>How much mon$ are you willing to fork over?</h2>
-                    <input type="radio" name="cost" id="$" value="$">
-                    <label for="$"><i class="far fa-square"></i>I have 12 cents in my bank account</label>
-                    <input type="radio" name="cost" id="$$" value="$$">
-                    <label for="$$"><i class="far fa-square"></i>like..... enough</label>
-                    <input type="radio" name="cost" id="$$$" value="$$$">
-                    <label for="$$$"><i class="far fa-square"></i> I have almost too much money</label>
-                    <input type="submit" value="submit">
-                </div>
-            </form>
+        
+            <div class="questionContainer visuallyhidden">
+                <h2>What is your birthday?</h2>
+                <input type="date" name="bday" id="date">
+                <label for="date"></label>
+            </div>
+        
+            <div class="questionContainer">
+                <h2>Does it need to have meaning?</h2>
+                <input type="radio" name="meaning" id="yes" value="yes">
+                <label for="yes"><i class="far fa-square"></i>yes, I am very introspective</label>
+                <input type="radio" name="meaning" id="no" value="no">
+                <label for="no"><i class="far fa-square"></i>no, my body is just a canvas!!</label>
+                <input type="radio" name="meaning" id="idcMeaning" value="idcMeaning">
+                <label for="idcMeaning"><i class="far fa-square"></i>idc either way</label>
+        
+            </div>
+        
+            <div class="questionContainer">
+                <h2>How big do you want this thing?</h2>
+                <input type="radio" name="size" id="small" value="small">
+                <label for="small"><i class="far fa-square"></i>littel ☺</label>
+                <input type="radio" name="size" id="medium" value="medium">
+                <label for="medium"><i class="far fa-square"></i>visible, but not obnoxious</label>
+                <input type="radio" name="size" id="large" value="large">
+                <label for="large"><i class="far fa-square"></i>I want to be able to take my shirt off at parties</label>
+            </div>
+        
+            <div class="questionContainer">
+                <h2>Trendy or traditional?</h2>
+                <input type="radio" name="style" id="traditional" value="traditional">
+                <label for="traditional"><i class="far fa-square"></i>classic & familiar</label>
+                <input type="radio" name="style" id="trendy" value="trendy">
+                <label for="trendy"><i class="far fa-square"></i>cool & trendy</label>
+                <input type="radio" name="style" id="idcTT" value="idcTT">
+                <label for="idcTT"><i class="far fa-square"></i>neither, I don't want to limit my options</label>
+            </div>
+        
+            <div class="questionContainer">
+                <h2>Colour or no?</h2>
+                <input type="radio" name="colour" id="colour" value="colour">
+                <label for="colour"><i class="far fa-square"></i>colour!!!</label>
+                <input type="radio" name="colour" id="black" value="black">
+                <label for="black"><i class="far fa-square"></i>just black</label>
+                <input type="radio" name="colour" id="idcColour" value="idcColour">
+                <label for="idcColour"><i class="far fa-square"></i>idc and please stop trying to limit me</label>
+            </div>
+        
+            <div class="questionContainer">
+                <h2>How much mon$ are you willing to fork over?</h2>
+                <input type="radio" name="cost" id="$" value="$">
+                <label for="$"><i class="far fa-square"></i>I have 12 cents in my bank account</label>
+                <input type="radio" name="cost" id="$$" value="$$">
+                <label for="$$"><i class="far fa-square"></i>like..... enough</label>
+                <input type="radio" name="cost" id="$$$" value="$$$">
+                <label for="$$$"><i class="far fa-square"></i> I have almost too much money</label>
+                <input type="submit" value="submit">
+            </div>
 
             <div class="questionContainer results">
                 <h2 class="resultsTitle">It's a match!</h2>
                 <a class="button" href="#first">play again?</a>
             </div>
+        </form>
 
-        </div>
     </main>
 
     <footer>
@@ -120,6 +121,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="scripts/allTatts.js"></script>
     <script src="scripts/script.js"></script>
 </body>

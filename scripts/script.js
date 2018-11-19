@@ -1,19 +1,28 @@
 // Script for Claire Valant Project 3: Toronto Tattoo Tinder
 
-// when an input is selected, add a class of the label to "selected" to change the color to #ff616f
 tattApp.toggleCheck = function(){
 
     // reset all inputs to undefined, so if user reloads page they can start over
     // $("input[type=radio]").val(undefined);
 
     // If input is checked, change icon and icon colour
-    // remove class of checked-square from everything else but the clicked one
     $("label").on("click", function () {
         // remove the changed class of "checked square" on all labels...
         $(this).parents(".questionContainer").find("i").removeClass("fa-check-square").addClass("fa-square");
         // ...add the (styled) class of check square to the i
         $(this).children("i").toggleClass("fa-square fa-check-square");
     })
+}
+
+tattApp.swipeEnable = function() {
+    // use Scroll jQuary library to enable swipe on mobile and tablet
+    $("form").swipe("option", { threshold: 100} );
+
+    $("form").on("swipe", function() {
+        console.log("swiping!");
+    });
+
+
 }
 
 // when the form is submitted,
@@ -68,7 +77,7 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
     // randomly select one tattoo idea for the user and one artist from the list
     const rand = Math.floor(Math.random() * results.length);    
     const finalAnswer = results[rand].name;
-    const finalAnswerMeaning = results[rand].meaning[2];
+    const finalAnswerMeaning = results[rand].meaning[3];
     const finalAnswerArtist = results[rand].artist;
     
     // provide the user's randomly selected result from their results array and insert a paragraph in the .results section depending on whether or not the user cares for a "meaning"
@@ -87,6 +96,7 @@ tattApp.findResults = function(uType, uMeaning, uSize, uStyle, uColour, uCost) {
 // initiating function
 tattApp.init = function() {
     // All methods go here
+    tattApp.swipeEnable();
     tattApp.toggleCheck();
     tattApp.formSubmit();
 
